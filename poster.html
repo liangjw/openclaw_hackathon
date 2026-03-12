@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device=800">
+  <title>龙虾管家 - AI生活规划师</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .poster {
+      width: 800px;
+      height: 1200px;
+      background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+      border-radius: 24px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+    .lobster {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 120px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-15px); }
+    }
+    .title {
+      position: absolute;
+      top: 220px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 56px;
+      font-weight: 800;
+      color: #fff;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .subtitle {
+      position: absolute;
+      top: 295px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      color: #64ffda;
+      letter-spacing: 4px;
+    }
+    .tagline {
+      position: absolute;
+      top: 360px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 22px;
+      color: #a8b2d1;
+      text-align: center;
+      width: 600px;
+      line-height: 1.6;
+    }
+    .features {
+      position: absolute;
+      top: 460px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 700px;
+    }
+    .feature {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 16px 20px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      border: 1px solid rgba(100,255,218,0.1);
+    }
+    .feature-icon {
+      font-size: 32px;
+      margin-right: 20px;
+    }
+    .feature-text {
+      color: #fff;
+      font-size: 20px;
+    }
+    .track-badge {
+      position: absolute;
+      top: 780px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #64ffda 0%, #00d4aa 100%);
+      color: #0a0a1a;
+      padding: 16px 48px;
+      border-radius: 50px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .prize {
+      position: absolute;
+      bottom: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .prize-title {
+      font-size: 20px;
+      color: #a8b2d1;
+      margin-bottom: 12px;
+    }
+    .prize-amount {
+      font-size: 36px;
+      font-weight: 800;
+      color: #ffd700;
+    }
+    .footer {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      color: #5a6a8a;
+    }
+    .qr-placeholder {
+      position: absolute;
+      bottom: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 120px;
+      background: #fff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="lobster">🦞</div>
+    <div class="title">龙虾管家</div>
+    <div class="subtitle">AI LIFE PLANNER</div>
+    <div class="tagline">让AI帮你把日子过好<br>智能记账 · 任务提醒 · 健康生活</div>
+    
+    <div class="features">
+      <div class="feature">
+        <span class="feature-icon">💰</span>
+        <span class="feature-text">智能记账 & 理财分析</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">📋</span>
+        <span class="feature-text">任务拆分 & 进度追踪</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">⏰</span>
+        <span class="feature-text">定时提醒 & 自动通知</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">🏃</span>
+        <span class="feature-text">健康作息 & 运动提醒</span>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">✈️</span>
+        <span class="feature-text">旅行规划 & 预算计算</span>
+      </div>
+    </div>
+    
+    <div class="track-badge">🏠 生活龙虾赛道</div>
+    
+    <div class="qr-placeholder">扫码体验</div>
+    
+    <div class="prize">
+      <div class="prize-title">奖金池</div>
+      <div class="prize-amount">百万现金 + 千亿Token</div>
+    </div>
+    
+    <div class="footer">北纬·龙虾大赛第一届 © 2026</div>
+  </div>
+</body>
+</html>
